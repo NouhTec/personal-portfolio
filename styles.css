@@ -1,0 +1,72 @@
+/* تخصيص الخط الأساسي */
+.font-cairo {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* تخصيص شريط التمرير (Scrollbar) ليصبح احترافياً */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* تأثير الزجاج الشفاف لشريط التنقل */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* تصميم خلفية شبكية خفيفة للقسم الرئيسي */
+.bg-grid-pattern {
+    background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* تنسيق الأزرار */
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+}
+.btn-primary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* تصميم بطاقات المهارات (تأثير الرفع عند التمرير) */
+.skill-card {
+    background-color: #1e293b;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid #334155;
+    transition: all 0.4s ease;
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: #3b82f6;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(59, 130, 246, 0.1);
+}
+
+/* تنسيق العلامات (Tags) في المشاريع */
+.tag {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #60a5fa;
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
